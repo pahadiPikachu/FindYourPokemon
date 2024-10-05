@@ -1,6 +1,6 @@
-# Pokémon Image Search Engine
+# Pokémon Image Search App
 
-This is a Pokémon image search engine created using React and the Fuse.js library. The app allows users to search for Pokémon by name, and it displays images fetched from the PokéAPI (https://pokeapi.co/).
+This is a Pokémon image search app created using React and the Fuse.js library. The app allows users to search for Pokémon by name, and it displays images fetched from the PokéAPI (https://pokeapi.co/).
 
 ## Features
 - Search for Pokémon by name.
