@@ -12,7 +12,8 @@ h1 {
   font-size: 36px;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin: 10px 0;
   cursor: pointer;
 }
 
@@ -20,6 +21,7 @@ h1 {
   h1 {
     font-size: 28px;
     /* margin-bottom: 15px; */
+    margin: 10px 0;
   }
 }
 
@@ -33,14 +35,15 @@ form {
 }
 
 .search-input {
-  width: 80vw;
+  /* width: 80vw; */
+  width: calc(100% - 130px);
   max-width: 300px;
   height: 40px;
   padding: 0 10px;
   font-size: 16px;
   border-radius: 5px;
   border: none;
-  /* outline: none; */
+  outline: none;
   color: #ffffff;
   background-color: #444444;
 }
@@ -48,9 +51,11 @@ form {
 /* Button */
 button {
   /* width: 50%; */
-  width: 80vw;
-  max-width: 150px;
-  padding: 10px 20px;
+  /* width: 80vw;
+  max-width: 150px; */
+  width: 120px;
+  height: 40px;
+  padding: 0px 20px;
   font-size: 16px;
   color: #ffffff;
   background-color: #ff9800;
@@ -58,10 +63,19 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
 }
 
 button:hover {
   background-color: #e68900;
+}
+
+@media (max-width: 600px) {
+  .search-input, button {
+    width: 90%;
+    margin: 5px;
+  }
 }
 
 /* Pokemon Grid */
@@ -70,7 +84,7 @@ button:hover {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   padding: 0.5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .pokemon-card {
@@ -81,6 +95,7 @@ button:hover {
   padding: 10px;
   text-align: center;
   transition: transform 0.3s;
+  overflow: hidden;
 }
 
 .pokemon-card:hover {
