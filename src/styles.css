@@ -3,6 +3,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #2b2b2b;
   color: #f0f0f0;
+  overflow-x: hidden;
 }
 
 /* Title styling */
@@ -30,7 +31,7 @@ form {
 }
 
 .search-input {
-  width: 100%;
+  width: 90vw;
   max-width: 300px;
   height: 40px;
   padding: 0 10px;
@@ -44,6 +45,7 @@ form {
 
 /* Button */
 button {
+  width: 50%;
   padding: 10px 20px;
   font-size: 16px;
   color: #ffffff;
@@ -63,10 +65,12 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .pokemon-card {
+  max-width: 95%; 
+  margin: 0 auto; 
   background-color: #3a3a3a;
   border-radius: 10px;
   padding: 10px;
@@ -77,6 +81,19 @@ button:hover {
 .pokemon-card:hover {
   transform: scale(1.05);
 }
+
+@media (orientation: landscape) {
+  .pokemon-grid {
+    padding: 0.25rem; /* Further reduce padding */
+  }
+  .pokemon-card {
+    max-width: 80vw; /* Cap card width at 80% of viewport */
+  }
+  form {
+    flex-direction: column; /* Stack form elements vertically */
+  }
+}
+
 
 /* Suggestions list styling */
 .suggestions-list li {
