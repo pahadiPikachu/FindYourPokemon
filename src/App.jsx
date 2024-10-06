@@ -1,6 +1,5 @@
 
 import PokemonSearch from "./PokemonSearch";
-import './App.css'
 import './styles.css'
 
 function App() {
