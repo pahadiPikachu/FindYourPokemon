@@ -111,13 +111,14 @@ function PokemonSearch() {
 
   return (
     <div>
-      <h1 onClick={() => { 
+      <h1> <span onClick={() => { 
         setSearchPerformed(false); 
         setPokemonName(''); 
         setPokemonData(null); 
         setRandomPokemon(getRandomPokemon(pokemonList, 20)); // Regenerate random Pokémon list each time title is clicked
       }}>
         Pokémon Image Search
+</span>
       </h1>
 
       <form onSubmit={handleSubmit}>
